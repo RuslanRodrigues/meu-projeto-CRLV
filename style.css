@@ -1,0 +1,237 @@
+/* Estilos para o header */
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #197872;
+    box-sizing: border-box;
+    width: 743px;
+    border-radius: 5px;
+}
+
+/* Estilos para o Logo */
+.header .logo {
+    max-width: 200px;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+/* Estilos para o conteúdo principal */
+body {
+    font-family: Arial, sans-serif;
+    margin: 224px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('pics/img_fundo.png'); /* Adiciona a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir o fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+}
+
+/* Estilos para o conteúdo principal em dispositivos menores */
+@media (max-width: 768px) {
+    body {
+        margin: 50px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 20px;
+        padding: 10px;
+    }
+}
+/* Estilos para formulários gerais */
+.form-container, #login, #newpass {
+    max-width: 250px;
+    margin: 10px auto; /* Centralize e reduza a margem */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+}
+
+/* Estilos para os campos de formulário */
+.form-group input,
+#login input,
+#newpass input {
+    width: 100%; 
+    padding: 5px;
+    border: 1px solid #197872;
+    border-radius: 3px;
+    /* box-sizing: border-box; */
+    font-size: 0.9em;
+}
+
+.form-group button,
+#login button,
+#newpass button {
+    width: 100%;
+    padding: 7px;
+    background-color: #197872;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px; /* Espaçamento acima do botão */
+    margin-bottom: 10px; /* Espaçamento abaixo do botão */
+}
+
+.form-group button:hover,
+#login button:hover,
+#newpass button:hover {
+    background-color: #145a54; /* Cor de hover para botões */
+}
+
+/* Estilos para labels e links */
+.form-group label,
+#login label,
+#newpass label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 0.9em;
+    color: #197872;
+    
+}
+
+.form-group a,
+#login a {
+    text-decoration: none;
+    color: #197872;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+}
+
+.form-group a:hover,
+#login a:hover {
+    text-decoration: underline; /* Efeito hover para links */
+}
+/* Estilos para alertas */
+.alert {
+    display: none;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.alert img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.alert a {
+    color: white;
+    text-decoration: underline;
+}
+
+.alert-custom {
+    background-color: #6cb5c7;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Estilos para alertas de erro */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+/* Estilos para tabelas */
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th, td {
+    background-color: #096101;
+    color: white;
+}
+
+table {
+    text-align: center;
+}
+/* Estilos para o card */
+.card-body {
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 8px;
+    background-image: url('pics/img_header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos para a logo dentro do card */
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para o contêiner principal */
+#L {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 732px;
+}
+/* Media queries para responsividade em tamanhos menores */
+@media (max-width: 768px) {
+    .form-container, #login, #newpass {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form-group input,
+    .form-group button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header .logo {
+        max-width: 150px;
+        padding: 5px 10px;
+    }
+
+    .form-container, #login, #newpass {
+        padding: 10px;
+    }
+
+    .form-group input,
+    .form-group button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+.centralizado {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 0 auto; /* Centraliza o contêiner do parágrafo, se necessário */
+}
